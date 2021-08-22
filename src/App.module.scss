@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.app {
+  width: 100vw;
+  //height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./chain-link-fence.jpg");
+  //background-color: #d8e2dc;
+  //background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //border: 5px solid grey;
+  border-radius: 5px;
+
+  .appTitle {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: $primary-font;
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px 5px darkslategray;
+    padding: 5px;
+
+        button {
+          //min-width: 141px;
+          font-family: $primary-font;
+          font-size: 1em;
+          font-weight: bold;
+          color: #006446;
+          //text-shadow: 2px 2px 5px darkslategray;
+          background-color: white;
+          outline: none;
+          border: 2px solid #006466;
+          border-radius: 4px;
+          padding: 4px;
+          margin-right: 20px;
+
+          button:hover {
+            color: white;
+            background-color: #006466;
+          }
+
+          a:link {
+            color: #006466;
+            text-decoration: none;
+          }
+
+          a:visited {
+            color: #006466;
+          }
+
+          a:hover {
+            color: white;
+            background-color: #006466;
+          }
+
+
+        } 
+  }
+}
+
+@media screen and (min-width: 478px) {
+
+  .appMain {
+    display:flex;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+  .appTitle {
+    font-size: 1.3em;
+  }
+  
+}

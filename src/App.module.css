@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Special+Elite&display=swap");
+.app {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./chain-link-fence.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.app .appTitle {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Special Elite", cursive;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 5px darkslategray;
+  padding: 5px;
+}
+.app .appTitle button {
+  font-family: "Special Elite", cursive;
+  font-size: 1em;
+  font-weight: bold;
+  color: #006446;
+  background-color: white;
+  outline: none;
+  border: 2px solid #006466;
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 20px;
+}
+.app .appTitle button button:hover {
+  color: white;
+  background-color: #006466;
+}
+.app .appTitle button a:link {
+  color: #006466;
+  text-decoration: none;
+}
+.app .appTitle button a:visited {
+  color: #006466;
+}
+.app .appTitle button a:hover {
+  color: white;
+  background-color: #006466;
+}
+
+@media screen and (min-width: 478px) {
+  .appMain {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appTitle {
+    font-size: 1.3em;
+  }
+}
